@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding-top: 10px;
+    column-gap: 5vw;
+}
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#searchBook{
+    margin-left: auto;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: fit-content;
+    width: 23vw;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+.input_section > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    color: cornflowerblue;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    border-radius: 10px;
+    width: 25vw;
+}
+
+.book_shelf > h2 {
+    color: cornflowerblue;
+}
+
+
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.action{
+    display: flex;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    
+    background: url('assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto !important;
+}
+
+.book_shelf > .book_list > .book_item > .action > .yellow {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.head_bar__title{
+    color: white;
+}
+
+.edit-modal{
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-modal > .edit-container{
+    
+    background-color: whitesmoke;
+    border-radius: 4px;
+    width: 40vw;
+    height: 40vh;
+}
+
+.edit-modal > .edit-container > #editForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+.edit-modal > .edit-container > #editForm > .edit-input{
+    font-size: 32px;
+    display: flex;
+    column-gap: 2vw;
+    margin-top: 10px;
+}
+
+.edit-modal > .edit-container > #editForm > .edit-input > input{
+    padding: 8px;
+    width: 100%;
+}
+
+.edit-modal > .edit-container > #editForm > .edit-input:last-child{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-btn{
+    background-color: blue;
+    color: white;
+    width: 20vw;
+}
+
+.cancel-btn{
+    background-color: brown;
+    color: white;
+    width: 20vw;
+}
+
